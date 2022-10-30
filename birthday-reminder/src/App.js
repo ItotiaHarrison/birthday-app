@@ -5,11 +5,13 @@ import List from './List';
 
 function App() {
   return (
-    <div className="App">
-      <h1>My Contacts</h1>
-   <Data />
-   <List />
-    </div>
+    <main>
+      <section className="container">
+        <h3>0 birthdays today</h3>
+        <List />
+        <button onClick={() => console.log('you clicked me')}>clear all</button>
+        </section>
+    </main>
   );
 }
 
